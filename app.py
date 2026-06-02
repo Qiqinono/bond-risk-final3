@@ -1598,8 +1598,6 @@ def render_model_note(metrics_df: pd.DataFrame) -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("### 测试表现")
-    dark_table(format_metric_table(metrics_df), max_height=520)
 
 def render_data_status(pred_df: pd.DataFrame, status: Dict[str, object]) -> None:
     section_header(
